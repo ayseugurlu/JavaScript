@@ -54,19 +54,68 @@
 // }
 // console.log("The if...else if...else statement is easy");
 
-let a = 3;
-switch (a) {
-  case "3":
-    a = 33;
-    break;
-  case 2:
-    a = 'two';
-    break;
-  case 3:
-    a = 'three';
-    break;
-  default:
-    a = 'not found';
-    break;
+// let a = 3;
+// switch (a) {
+//   case "3":
+//     a = 33;
+//     break;
+//   case 2:
+//     a = 'two';
+//     break;
+//   case 3:
+//     a = 'three';
+//     break;
+//   default:
+//     a = 'not found';
+//     break;
+// }
+// console.log(`The value i ${a}`);
+
+// console.log(Boolean(`5>3`));
+
+// console.log(typeof ("5" + 3));
+
+// console.log(4 < 5 && 5 > 3);
+
+// let sum=0;
+// for (let i = 0; i < 6; i++) {
+//   console.log(i);
+//   sum +=i;
+//   console.log(sum);
+//   console.log("******");
+// }
+// console.log (`The total is ${sum}`);
+
+// var sum = 0;
+// for (var i = 3; i < 7; i++) {
+// sum += i;
+// console.log(sum);
+// if (i ===3 || sum > 10) {
+// continue;
+// }
+// console.log(i);
+// }
+
+// let a,b;
+// a=+prompt(`give me first number`,  );
+// b=+prompt(`give me second number`, );
+// let sum=a+b;
+// console.log(sum);
+
+
+function sayHi(userName) {
+    console.log(`Hello! ${userName}`);
 }
-console.log(`The value i ${a}`);
+sayHi('Mark');
+sayHi(); // what will be the output?
+
+function sayHi2(userName, company) {
+    console.log(`Hello! ${userName} of ${company}`);
+    company = 'Apple';
+    console.log(`Hello! ${userName} of ${company}`);  
+}
+let userName= 'Mark';
+let company = 'Clarusway';
+sayHi2(userName, company);
+console.log(company);
+sayHi2('Matthew');
