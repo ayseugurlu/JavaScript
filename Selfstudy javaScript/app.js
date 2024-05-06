@@ -43,13 +43,30 @@
 // }
 // console.log("The if statement is easy");
 
-const number = prompt("Enter a number: ");
-// check if number is greater than 0
-if (number > 0) {
-  console.log("The number is positive");
-} else if (number == 0) { // check if number is 0
-  console.log("The number is 0");
-} else { // if number is neither greater than 0, nor zero
-  console.log("The number is negative");
+// const number = prompt("Enter a number: ");
+// // check if number is greater than 0
+// if (number > 0) {
+//   console.log("The number is positive");
+// } else if (number == 0) { // check if number is 0
+//   console.log("The number is 0");
+// } else { // if number is neither greater than 0, nor zero
+//   console.log("The number is negative");
+// }
+// console.log("The if...else if...else statement is easy");
+
+let a = 3;
+switch (a) {
+  case "3":
+    a = 33;
+    break;
+  case 2:
+    a = 'two';
+    break;
+  case 3:
+    a = 'three';
+    break;
+  default:
+    a = 'not found';
+    break;
 }
-console.log("The if...else if...else statement is easy");
+console.log(`The value i ${a}`);
