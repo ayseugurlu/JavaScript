@@ -152,7 +152,7 @@ const sayi4=4;
 console.log(sayi4==4);//esit mi? //true
 console.log(sayi4===4);//true
 console.log(sayi4=="4");//true
-console.log(sayi4="===4");//false
+console.log(sayi4==="4");//false
 
 console.log(sayi4!=5);//true 5 e esit degil mi?
 
@@ -215,6 +215,65 @@ let ee="123.45";
 
 console.log(parseInt(ee)); // tam kismi alir number a cevirir.
 console.log(parseFloat(ee));//virgüllü haliyle kalir number olur.
+
+//"**********"
+
+// //* .toString() Metodu numberları stringe çevirir
+
+let f=123.45;
+console.log(f.toString());//bu satirda stringe cevirir kslici degildir.
+console.log(f);//type i number dir.
+
+//* + ile de number a cevirebiliriz
+
+console.log(+ee); //type i number dir
+let i=+e; 
+console.log(typeof i); //number
+console.log(typeof ee); //string
+
+//* .toFixed() noktadan sonra kaç basamak alacağımızı belirtir. Sayıyı stringe çevirir
+
+let z=0.2354548;
+
+console.log(+z.toFixed(2)); //0.23 ve koydugumuz + dan dolayi number dir.
+
+//* Prompt komutu da toFixed gibi kullanilan sayiyi string yapar.
+
+const age= prompt("lütfen yasinizi giriniz");
+
+console.log(typeof age); //string
+
+const age2=+prompt("lütfen yasinizi giriniz");
+
+console.log(typeof age2); //number
+
+
+
+
+//* Null Undefined NaN 
+
+console.log(typeof null); //object
+let n=null
+
+console.log(Boolean(n));// false
+
+console.log(null-5); //-5
+
+console.log(null==undefined);//true
+console.log(null===undefined);//false
+
+console.log(Number("asdf"));
+console.log(Number("1234"));
+console.log(null===null);
+
+
+//!GENEL KÜLTÜR
+
+console.log(Number("0x11"));// x=hexa 16 lık taban 17
+
+console.log(Number("0b101"));// b=binary 2 lik taban 5
+
+console.log(Number("0o11")); // o=octal 8 lik taban 9
 
 
 
