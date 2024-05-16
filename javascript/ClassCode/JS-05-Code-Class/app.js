@@ -184,6 +184,35 @@
 
 // console.log("toplam:",counter);
 
+//? //!  verilen sayının tüm basamaklarının sayı değerlerinin basamak adedi kuvveti kadar toplamı kendisine eşitse bu bir armstrong sayıdır.
+
+// let num = +prompt("Enter a number:");
+// let originalNumber = num;
+// let sayac = 0;
+// let sum = 0;
+
+
+
+// while (originalNumber != 0) {
+//   originalNumber = Math.floor(originalNumber / 10);
+//   console.log(originalNumber);
+//   sayac++;
+// }
+
+// originalNumber = num;
+
+// while (originalNumber > 0) {
+//   let sayi = originalNumber % 10;
+//   sum += sayi ** sayac;
+//   originalNumber = Math.floor(originalNumber / 10);
+// }
+
+// sum == num
+//   ? console.log(num + " is an Armstrong number.")
+//   : console.log(num + " is not an Armstrong number.");
+
+
+
 
 
 
