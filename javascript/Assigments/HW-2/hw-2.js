@@ -94,10 +94,24 @@
 
 //* yil degerini parametre olarak alan ve bu yilin artik yil olup olmadigini hesaplayarak sonucu ana programa döndüren fonksiyonu function-expression yöntemi ile yaziniz. Not: Yil 4e tam bölünüyorsa ve (100e tam bölünmüyorsa veya 400e tam bölünüyorsa) artik yildir aksi takdirde degildir.
 
-cont artikYilmi = function(year){
+const artikYilmi = function(year){
+
+    if(year%4==0 && year%100!=0){
+        console.log(`${year} artik yildir.`)
+    } else if(year%4==0 && year%400==0){
+        console.log(`${year} artik yildir.`)
+    }else{
+        console.log(`${year} artik yil degildir.`)
+    }
 
     
 }
+artikYilmi(2000);
+artikYilmi(1980);
+artikYilmi(2024);
+artikYilmi(1991);
+artikYilmi(2056);
+artikYilmi(2028);
 
 
 
