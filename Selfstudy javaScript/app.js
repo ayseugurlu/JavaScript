@@ -103,19 +103,49 @@
 // console.log(sum);
 
 
-function sayHi(userName) {
-    console.log(`Hello! ${userName}`);
-}
-sayHi('Mark');
-sayHi(); // what will be the output?
+// function sayHi(userName) {
+//     console.log(`Hello! ${userName}`);
+// }
+// sayHi('Mark');
+// sayHi(); // what will be the output?
 
-function sayHi2(userName, company) {
-    console.log(`Hello! ${userName} of ${company}`);
-    company = 'Apple';
-    console.log(`Hello! ${userName} of ${company}`);  
-}
-let userName= 'Mark';
-let company = 'Clarusway';
-sayHi2(userName, company);
-console.log(company);
-sayHi2('Matthew');
+// function sayHi2(userName, company) {
+//     console.log(`Hello! ${userName} of ${company}`);
+//     company = 'Apple';
+//     console.log(`Hello! ${userName} of ${company}`);  
+// }
+// let userName= 'Mark';
+// let company = 'Clarusway';
+// sayHi2(userName, company);
+// console.log(company);
+// sayHi2('Matthew');
+
+// const myFunc = (num1,num2)=> {
+//     return  num1 % num2 ? false: 
+// }
+
+// const isDivide=myFunc(252,9)
+
+// console.log(isDivide);
+
+// let myStr = "Hello, FS Cohort 09!"
+
+// console.log(myStr.length);
+
+console.log('ClarusWay'.endsWith('way'))
+
+// let myVar ="clarusway"
+
+// myVar[0]="C"
+
+// console.log(myVar)
+
+// let str ="Once a day"
+// let index=str.indexOf("a")
+// let index2=str.lastIndexOf("a")
+
+// console.log(str.indexOf("a",index+1)===index2)
+
+// str = "Anthony Harold"
+
+// console.log(str.slice(8))
