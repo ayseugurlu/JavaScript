@@ -223,41 +223,97 @@
 
 // FindFehlt(sal)
 
-//! 12- let string="altı,bir,iki,dört,beş,üç,yedi,sekiz,dokuz"
-//! 612453789   bu hale dönüştüren program
+//! 12- let string="alti,bir,iki,dört,bes,üc,yedi,sekiz,dokuz"
+//! 612453789  bu hale dönüştüren program
 
+// function returnNumber(string) {
+//   let array = string.split(",");
+//   console.log(array);
 
+//   let numbers = [];
 
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] == "sifir") {
+//       numbers.push(0);
+//     } else if (array[i] == "bir") {
+//       numbers.push(1);
+//     } else if (array[i] == "iki") {
+//       numbers.push(2);
+//     } else if (array[i] == "üc") {
+//       numbers.push(3);
+//     } else if (array[i] == "dört") {
+//       numbers.push(4);
+//     } else if (array[i] == "bes") {
+//       numbers.push(5);
+//     } else if (array[i] == "alti") {
+//       numbers.push(6);
+//     } else if (array[i] == "yedi") {
+//       numbers.push(7);
+//     } else if (array[i] == "sekiz") {
+//       numbers.push(8);
+//     } else if (array[i] == "dokuz") {
+//       numbers.push(9);
+//     } else {
+//       numbers.push("");
+//     }
+//   }
 
+//   return numbers.join("");
+// }
 
+// let dize = "alti,bir,iki,dört,bes,üc,yedi,sekiz,dokuz";
+// console.log(returnNumber(dize));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 //! 13- Size bir dizi kelime verildi. "Nemo" kelimesini bulmanız ve şuna benzer bir dize döndürmeniz gerekir:
+//? "[Nemo'yu bulduğunuz kelimenin sırası] 'nda Nemo'yu buldum!"
+
+//? Nemo'yu bulamıyorsanız, "I can't find Nemo :(" yazın.
+
+//? findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"
+
+//? findNemo("Nemo is me") ➞ "I found Nemo at 1!"
+
+//? findNemo("I Nemo am") ➞ "I found Nemo at 2!"
+
+// function findNemo(string) {
+//   let array = string.split(" ");
+//   //   console.log(array);
+
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] == "Nemo") {
+//       return `I found Nemo at ${i+1}!`;
+//     }
+//   }
+
+//   return "I can't find Nemo :(";
+// }
+
+// console.log(findNemo("I am finding Nemo !"));
+// console.log(findNemo("Nemo is me"));
+// console.log(findNemo("I am Nemo"));
+// console.log(findNemo("I am here"));
+
+//*2.Yol
+
+// function findNemo(sentence) {
+//     if (sentence.includes("Nemo ")) {
+//       return "I found Nemo at " + (sentence.split(" ").indexOf("Nemo") + 1) + "!";
+//     } else {
+//       return "I can't find Nemo :(";
+//     }
+//   }
 
 //! 14- Bir öğe dizisini alan, tüm yinelenen öğeleri kaldıran ve eski diziyle aynı sırada yeni bir dizi döndüren bir fonksiyon oluşturan program
-2585
+
+// let dizi1=[1,1,5,3,2,3,8,1,5]
+// function entfernDuplikat(array){
+//     let newArray=[]
+//     for(i=0 ; i<array.length ; i++){
+//     if(!newArray.includes(array[i])){
+//         newArray.push(array[i])
+//     }
+// }
+// return newArray
+// }
+
+// console.log(entfernDuplikat(dizi1))
