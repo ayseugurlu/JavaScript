@@ -26,8 +26,9 @@ buton.style.textAlign = "center";
 
 const btn = document.getElementsByClassName("btn");
 for (i=0 ; i<btn.length ; i++){
-  btn[i].style.padding = "10px 20px";
-  btn[i].style.margin = "30px 10px";
+  btn[i].style.padding = "10px 30px";
+  btn[i].style.borderRadius="5px"
+  btn[i].style.margin = "30px 1px";
   btn[i].style.fontSize = "1rem";
   if (btn[i] == btn[0]) {
     btn[i].style.color = "orange";
