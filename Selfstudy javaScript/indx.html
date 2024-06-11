@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balon Patlatma Oyunu</title>
+  <style>
+    .balloon {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-area" style="width: 100%; height: 100vh; position: relative;">
+    <h1>Puan: <span id="score">0</span></h1>
+  </div>
+  <script>
+    let score = 0;
+    
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      balloon.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+      balloon.style.left = Math.random() * (window.innerWidth - 50) + 'px';
+      balloon.addEventListener('click', () => {
+        balloon.remove();
+        score++;
+        document.getElementById('score').textContent = score;
+      });
+      document.getElementById('game-area').appendChild(balloon);
+    }
+    
+    setInterval(createBalloon, 1000);
+  </script>
+</body>
+</html>

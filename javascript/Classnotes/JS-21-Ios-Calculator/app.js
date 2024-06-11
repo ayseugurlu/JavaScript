@@ -6,6 +6,7 @@ const current = document.querySelector(".current-display");
 const equal = document.querySelector(".equal");
 const ac=document.querySelector(".ac")
 const percent=document.querySelector(".percent")
+const pm=document.querySelector(".pm")
 
 let altekranText = "";
 let ustekranText="";
@@ -132,3 +133,8 @@ percent.onclick=()=>{
     updateEkran()
 }
 
+pm.onclick=()=>{
+
+    altekranText=altekranText*(-1)
+    updateEkran()
+}

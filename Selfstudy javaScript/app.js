@@ -132,7 +132,7 @@
 
 // console.log(myStr.length);
 
-console.log('ClarusWay'.endsWith('way'))
+// console.log('ClarusWay'.endsWith('way'))
 
 // let myVar ="clarusway"
 
@@ -149,3 +149,4 @@ console.log('ClarusWay'.endsWith('way'))
 // str = "Anthony Harold"
 
 // console.log(str.slice(8))
+
