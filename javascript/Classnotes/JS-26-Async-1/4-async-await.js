@@ -20,38 +20,40 @@
 
 //! JavaScript finally anahtar kelimesi hata oluşması veya oluşmaması durumunda (her durumda) çalışacak kodları yazdırmak için kullanılır.
 
+const getData = async () => {
+  try {
+    const res = await fetch("https://api.tvmaze.com/search/shows?q=girls");
 
+    //? error handling
+    if (!res.ok) {
+      throw new Error(`URL de hata var ${res.status}`);
+    }
 
-const getData = async() => {
+    const veri = await res.json();
 
-   const rest = await fetch("https://api.tvmaze.com/search/shows?q=girls")
+    ekranaBastir(veri);
+  } catch (error) {
+    console.log(error);
+    console.log("try catch sayesinde kod devam ediyor");
 
-  const veri =  await rest.json()
+    document.querySelector("section").innerHTML = `<h1>${error}</h1>
+    <img src="./img/404.avif"/>`;
+  }
+};
 
-  ekranaBastir(veri)
+getData();
 
-}
+const ekranaBastir = (data) => {
+  // const div = document.createElement("div")
+  // const users = document.querySelector("section").appendChild(div)
 
-getData()
-
-const ekranaBastir= (data) => {
-
-    // const div = document.createElement("div")
-    // const users = document.querySelector("section").appendChild(div)
-
-    data.forEach((program) => {
-
-        document.querySelector("section").innerHTML += `
+  data.forEach((program) => {
+    document.querySelector("section").innerHTML += `
         
         <h1 class="text-danger" >${program.show.name}</h1>
-        <img src="${program.show.image?.medium}" />
+        <img src="${program.show.image?.medium || defaultImage}"/>
         
-        
-        `
-        
-    });
-
-    
-
-
-}
+         
+        `;
+  });
+};
